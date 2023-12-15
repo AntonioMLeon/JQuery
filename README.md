@@ -2,7 +2,7 @@
 
 #Figma
 
-figma1.png
+![Imagen1](figma1.png)
 
-figma2.png
+![imagen2](figma2.png)
 
