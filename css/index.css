@@ -1,0 +1,26 @@
+nav {   
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+.logo{
+  width: 160px;
+  height: 140px;
+  margin-top: 8px;
+}
+.logofooter{
+  width: 80px;
+  height: 70px;
+  margin-top: 7px;
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+}
