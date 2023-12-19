@@ -2,18 +2,48 @@ nav {
     background-color: black;
     height: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
+.menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  letter-spacing: 5px;
+}
+
+.menu li {
+    margin: 100px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 25px;
+}
+
+.menu a:hover {
+  text-decoration: solid;
+  color: #B491EE ;
+  font-size: 26px
+}
 
 .logo{
   width: 160px;
   height: 140px;
   margin-top: 8px;
+  margin-right: 40px;
 }
+
+
+/*footer*/
 .logofooter{
   width: 80px;
   height: 70px;
   margin-top: 7px;
+  margin-left: 40px;
 }
 
 footer{
@@ -23,4 +53,24 @@ footer{
   width: 100%;
   height: 80px;
   bottom: 0;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.elemento {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: white; /* Color del texto blanco */
+  margin: 60px; /* Espaciado horizontal entre elementos */
+  letter-spacing: 5px; /* Ajusta el espaciado entre las palabras */
+  font-size: 20px;
+}
+
+.elemento:hover {
+  text-decoration: solid;
+  color: #B491EE ;
+  font-size: 21px
+}
+
+.vertical-bar {
+  color: white; /* Color del texto blanco */
+  margin: 40px;
 }
