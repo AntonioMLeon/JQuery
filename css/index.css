@@ -1,76 +1,242 @@
-nav {   
-    background-color: black;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 25px;
+}
+
+.logoheader img {
+  width: 160px;
+  height: 140px;
+}
+
+#carrito{
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+  margin-left: -60px;
+  margin-bottom: 5px;
+}
+
+#carrito:hover{
+  transition: 0.7s;
+  transform: scale(1.2);
+}
+
 .menu {
+  margin-top: 10px;
+  font-size: 1.8em;
   list-style: none;
   display: flex;
-  padding: 0;
-  letter-spacing: 5px;
 }
 
 .menu li {
-    margin: 100px;
+  margin-right: 20px;
 }
 
 .menu a {
   text-decoration: none;
-  color: white;
+  transition: color 0.3s;
   font-family: 'Playfair Display SC', serif;
-  font-size: 25px;
 }
 
 .menu a:hover {
+  text-decoration: none;
+  color: #B491EE;
+}
+
+.menuicono {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menuicono span {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+.movilmenu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #000;
+  top: 60px;
+  right: 20px;
+  z-index: 1;
+}
+
+.movilmenu.active {
+  display: flex;
+}
+
+.elemento:hover{
   text-decoration: solid;
-  color: #B491EE ;
-  font-size: 26px
+  color: #B491EE;
+  transform: scale(1.2);
+  transition: all 0.9s;
 }
 
-.logo{
-  width: 160px;
-  height: 140px;
-  margin-top: 8px;
-  margin-right: 40px;
+/* Estilos nav para tablet */
+@media (max-width: 768px) {
+  nav{
+    height: 90px;
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  .menu {
+    display: none; 
+  }
+
+  .logoheader img {
+    width: 110px;
+    height: 90px;
+  }
+
+  .menuicono {
+    display: flex;
+  }
+
+  #carrito:hover{
+    transition: 0.7s;
+    transform: scale(1.2);
+  }
+  
+  .movilmenu.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background-color: #000;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .movilmenu.active a {
+      font-size: 2em; 
+      text-align: center;
+      margin: 10px 0; 
+      color: #fff;
+      transition: color 0.3s;
+  }
+  
+  .movilmenu.active a:hover {
+    color: #B491EE; 
+  }
+
+  .movilmenu.active a:first-child {
+      margin-top: 30px; 
+  }
+
+  .movilmenu.active a:last-child {
+      margin-bottom: 30px; 
+  }
 }
 
 
-/*footer*/
-.logofooter{
-  width: 80px;
-  height: 70px;
-  margin-top: 7px;
-  margin-left: 40px;
+/* Estilos nav movil */
+@media (max-width: 540px) {
+  nav{
+    height: 90px;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  #carrito:hover{
+    transition: 0.7s;
+    transform: scale(1.2);
+  }
+  
+  .logoheader img {
+    width: 100px;
+    height: 80px;
+  }
 }
 
-footer{
-  background-color: black;
+a {
+  margin-right: 4rem;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
   text-align: center;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 100px;
   bottom: 0;
+  font-size: 1.2em;
   font-family: 'Playfair Display SC', serif;
 }
 
-.elemento {
-  text-decoration: none; /* Elimina el subrayado del enlace */
-  color: white; /* Color del texto blanco */
-  margin: 60px; /* Espaciado horizontal entre elementos */
-  letter-spacing: 5px; /* Ajusta el espaciado entre las palabras */
-  font-size: 20px;
-}
-
-.elemento:hover {
-  text-decoration: solid;
-  color: #B491EE ;
-  font-size: 21px
+footer * {
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .vertical-bar {
-  color: white; /* Color del texto blanco */
-  margin: 40px;
+  display: inline-block;
+}
+
+.logofooter{
+  width: 80px;
+  height: 70px;
+  vertical-align: middle;
+}
+
+footer .elemento:nth-child(1)::before {
+  content: "2023 ";
+}
+
+footer .elemento:nth-child(5)::before {
+  content: "Política de ";
+}
+
+footer .elemento:nth-child(7)::before {
+  content: "Sobre ";
+}
+
+
+/* Estilos footer para tablet */
+@media (max-width: 768px) {
+  footer {
+    
+    font-size: 1.2em;
+  }
+
+  footer .elemento:nth-child(1)::before {
+    content: ""; 
+  }
+
+  footer .elemento:nth-child(5)::before {
+    content: ""; 
+  }
+ 
+}
+
+
+@media (max-width: 540px) {
+
+  .logofooter{
+    display: none;
+  }
+
+  footer{
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 8px;
+  }
+  .vertical-bar{
+    display: none;
+  }
 }
