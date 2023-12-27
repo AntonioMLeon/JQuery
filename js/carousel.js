@@ -1,8 +1,8 @@
-
 $(document).ready(function () {
     // Inicializar el carrusel
     var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
-      interval: false  // Desactivar la reproducción automática
+      interval: 3000,  // Desactivar la reproducción automática
+      pause: 'hover'
     });
 
     // Botón Siguiente
