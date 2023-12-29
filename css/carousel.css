@@ -6,6 +6,15 @@
     height: 700px;
 }
 
+.carousel2{
+    width: 1500px;
+    height: 700px;
+}
+
+.carousel3{
+    width: 1470px;
+    height: 700px;
+}
 
 .carousel-indicators{
     margin-bottom: 70px;
@@ -18,8 +27,43 @@
     
   }
 
-  .carousel-caption h5{
+.carousel-caption h5{
     color: white;
     font-size: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .carousel1{
+        width: 1400px;
+        height: 900px;
+    }
     
-  }
+    .carousel2{
+        width: 1400px;
+        height: 900px;
+    }
+    
+    .carousel3{
+        width: 1400px;
+        height: 900px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .carousel1{
+        width: 1000px;
+        height: 700px;
+    }
+    
+    .carousel2{
+        width: 1000px;
+        height: 700px;
+    }
+    
+    .carousel3{
+        width: 1000px;
+        height: 700px;
+    }
+}
