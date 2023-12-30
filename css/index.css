@@ -145,6 +145,14 @@ nav {
   .movilmenu.active a:last-child {
       margin-bottom: 30px; 
   }
+  
+  #carrito{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    margin-left: -60px;
+    margin-bottom: 5px;
+  }
 }
 
 

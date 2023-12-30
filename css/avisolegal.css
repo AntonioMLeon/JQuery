@@ -1,0 +1,73 @@
+body{
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    color: #B491EE;
+}
+
+p{
+    margin-bottom: 15px;
+    color: white;
+}
+
+#texto{
+  line-height: 25px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid #B491EE;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 300px;
+  width: 60%;
+  height: 1000px;
+}
+
+@media (max-width: 768px) {
+
+    body{
+        background-image: url('../img/fondo2.jpg');
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+    #texto{
+        line-height: 25px;
+        background-color: black;
+        border-radius: 10px;
+        border: 1px solid #B491EE;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 50px;
+        width: 90%;
+        height: 1000px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    body{
+        background-image: url('../img/fondo2.jpg');
+        background-size: 1000%;
+        background-repeat: no-repeat;
+    }
+
+    #texto{
+        line-height: 25px;
+        background-color: black;
+        border-radius: 10px;
+        border: 1px solid #B491EE;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 50px;
+        width: 70%;
+        height: 2380px;
+    }
+}
+
