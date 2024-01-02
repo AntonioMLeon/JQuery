@@ -1,0 +1,88 @@
+body{
+    background-image: url('../img/fondoprincipal2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    margin: 8px;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+
+section .producto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+section .producto img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.img-0{
+    width: 450px;
+    height: 364px; 
+}
+
+.img-1{
+   height: 364px; 
+}
+
+.img-3{
+    width: 450px;
+    height: 364px;
+}
+
+.img-4{
+    width: 450px;
+    height: 364px;
+}
+
+.img-5{
+    width: 450px;
+    height: 364px;
+}
+
+
+section .producto h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+section .producto p {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    body{
+        background-image: url('../img/fondoprincipal2.jpg');
+        background-size: 260%;
+        background-repeat: no-repeat;
+    }
+    
+
+}
+
+@media (max-width: 540px) {
+
+    body{
+        background-image: url('../img/fondoprincipal2.jpg');
+        background-size: 1000%;
+        background-repeat: no-repeat;
+    }
+
+}

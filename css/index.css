@@ -89,7 +89,6 @@ nav {
   transition: all 0.9s;
 }
 
-/* Estilos nav para tablet */
 @media (max-width: 768px) {
   nav{
     height: 90px;
@@ -156,7 +155,7 @@ nav {
 }
 
 
-/* Estilos nav movil */
+
 @media (max-width: 540px) {
   nav{
     height: 90px;
@@ -218,7 +217,7 @@ footer .elemento:nth-child(7)::before {
 }
 
 
-/* Estilos footer para tablet */
+
 @media (max-width: 768px) {
   footer {
     
