@@ -15,7 +15,7 @@ $(document).ready(function () {
           
           const btnReservar = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
               type: 'button',
-              value: 'Reservar',
+              value: 'Contratar',
               'data-bs-toggle': 'modal',
               'data-bs-target': '#exampleModal-' + index
           });
@@ -25,8 +25,8 @@ $(document).ready(function () {
               tabindex: '-1',
               'aria-labelledby': 'exampleModalLabel',
               'aria-hidden': 'true'
+              
           });
-
           
           modal.append(
               $('<div>').addClass('modal-dialog').append(
@@ -84,19 +84,20 @@ $(document).ready(function () {
                           }).text('Cerrar'),
                           $('<button>').attr({
                               type: 'button',
-                              class: 'btn btn-warning',
+                              class: 'btn btn-info',
                               onclick: "alert('La contratación se ha realizado correctamente')"
-                          }).text('Hacer reserva')
+                          }).text('Hacer contrato')
                       )
                   )
               )
           );
 
           
-          divProducto.append(imagen, nombre, precio, descripcion, btnReservar);
+          divProducto.append(imagen, nombre, precio, descripcion, btnReservar, modal);
 
           
           sectionContrataciones.append(divProducto);
       });
   });
 });
+

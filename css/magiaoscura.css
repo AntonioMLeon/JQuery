@@ -8,6 +8,15 @@ body{
     padding: 0;
 }
 
+.texto-blanco{
+    color: white !important;
+}
+
+.texto-blanco:hover{
+    color: #B491EE !important;
+}
+
+
 h4{
     color: #B491EE;
 }
