@@ -1,0 +1,42 @@
+{
+    "libros": [
+      {
+        "imagen": "../img/bartulos/libro1.jpg",
+        "nombre": "Tomorix",
+        "precio": 49.99,
+        "descripcion": "Tomo de invocación de hechizos primarios"
+      },
+      {
+        "imagen": "../img/bartulos/libro2.jpg",
+        "nombre": "Tomorix 2",
+        "precio": 59.99,
+        "descripcion": "Segundo tomo de invocación de hechizos primarios"
+      },
+      {
+        "imagen": "../img/bartulos/libro3.jpg",
+        "nombre": "Florarius",
+        "precio": 99.99,
+        "descripcion": "Enciclopedia del cuidado de plantas mágicas"
+      },
+      {
+        "imagen": "../img/bartulos/libro4.jpg",
+        "nombre": "Solemtium",
+        "precio": 149.99,
+        "descripcion": "Tomo de invocación de criaturas"
+      },
+
+      {
+        "imagen": "../img/bartulos/libro5.jpg",
+        "nombre": "Zezuz",
+        "precio": 299.99,
+        "descripcion": "Tomo de hechizería electrica de nivel 3"
+      },
+
+      {
+        "imagen": "../img/bartulos/libroagua.jpg",
+        "nombre": "Waterprof",
+        "precio": 89.99,
+        "descripcion": "Tomo de hechizos aquáticos básicos"
+      }
+    ]
+  }

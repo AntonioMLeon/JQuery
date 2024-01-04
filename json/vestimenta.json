@@ -1,0 +1,60 @@
+{
+    "vestimenta": [
+      {
+        "imagen": "../img/bartulos/sombrero1.jpg",
+        "nombre": "Sombrero ocultista",
+        "precio": 49.99,
+        "descripcion": "Perfecto para ser un mago ocultista"
+      },
+      {
+        "imagen": "../img/bartulos/sombrero2.jpg",
+        "nombre": "Darkess",
+        "precio": 69.99,
+        "descripcion": "Te mostrará las sombras"
+      },
+      {
+        "imagen": "../img/bartulos/sombrero3.jpg",
+        "nombre": "Fenix Santorium",
+        "precio": 99.99,
+        "descripcion": "Otorga poder del fenix"
+      },
+      {
+        "imagen": "../img/bartulos/sombrero4.jpg",
+        "nombre": "Lunacarga",
+        "precio": 59.99,
+        "descripcion": "Te ayudará a encontrar cualquier estrella del firmamento"
+      },
+
+      {
+        "imagen": "../img/bartulos/capa.jpg",
+        "nombre": "Capa de invisivilidad",
+        "precio": 199.99,
+        "descripcion": "Te ocultará mientras la lleves puesta"
+      },
+
+      {
+        "imagen": "../img/bartulos/botasalas2.jpg",
+        "nombre": "Botas voladoras",
+        "precio": 299.99,
+        "descripcion": "Podrás volar con ellas"
+      },
+      {
+        "imagen": "../img/bartulos/mochila.jpg",
+        "nombre": "Mochila de viaje",
+        "precio": 39.99,
+        "descripcion": "Te ayudará a llevar todo tu equipaje"
+      },
+      {
+        "imagen": "../img/bartulos/packropa.jpg",
+        "nombre": "Pack capa y botas",
+        "precio": 149.99,
+        "descripcion": "Capa y botas de Rivendell"
+      },
+      {
+        "imagen": "../img/bartulos/packropa2.jpg",
+        "nombre": "Pack capa, pantalones, chaleco y botas",
+        "precio": 209.99,
+        "descripcion": "Pack completo de Osarius"
+      }
+    ]
+  }

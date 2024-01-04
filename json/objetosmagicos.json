@@ -1,0 +1,136 @@
+{
+    "objetosmagicos": [
+      {
+        "imagen": "../img/bartulos/varita1.jpg",
+        "nombre": "Gulidor",
+        "precio": 99.99,
+        "descripcion": "Varita mágica de nivel 1"
+      },
+      {
+        "imagen": "../img/bartulos/varita2.jpg",
+        "nombre": "Pasvick",
+        "precio": 129.99,
+        "descripcion": "Varita mágica de nivel 2"
+      },
+      {
+        "imagen": "../img/bartulos/varita3.jpg",
+        "nombre": "Ultrasora",
+        "precio": 199.99,
+        "descripcion": "Varita mágica de nivel 3"
+      },
+      {
+        "imagen": "../img/bartulos/varita4.jpg",
+        "nombre": "Tox",
+        "precio": 259.99,
+        "descripcion": "Varita mágica de nivel 4"
+      },
+
+      {
+        "imagen": "../img/bartulos/packvaritas1.jpg",
+        "nombre": "Pack varitas 1",
+        "precio": 599.99,
+        "descripcion": "Pack de 7 varitas de nivel 1"
+      },
+
+      {
+        "imagen": "../img/bartulos/packvaritas2.jpg",
+        "nombre": "Pack varitas 2",
+        "precio": 899.99,
+        "descripcion": "Pack de  8 varitas de nivel 2"
+      },
+      {
+        "imagen": "../img/bartulos/mystix.jpg",
+        "nombre": "Mystix",
+        "precio": 139.99,
+        "descripcion": "Bola mágica proveedora del futuro"
+      },
+      {
+        "imagen": "../img/bartulos/bola1.jpg",
+        "nombre": "Pack bolas mágicas",
+        "precio": 1299.99,
+        "descripcion": "Pack de 10 bolas mágicas"
+      },
+      {
+        "imagen": "../img/bartulos/espejo.jpg",
+        "nombre": "Espejito espejito",
+        "precio": 209.99,
+        "descripcion": "Espejo mágico revelador de verdades ocultas"
+      },
+
+      {
+        "imagen": "../img/bartulos/reloj.jpg",
+        "nombre": "Tempo",
+        "precio": 2999.99,
+        "descripcion": "Reloj que permite modificar el tiempo"
+      },
+
+      {
+        "imagen": "../img/bartulos/polvos.jpg",
+        "nombre": "Polvos mágicos",
+        "precio": 169.99,
+        "descripcion": "300 gramos de polvos mágicos para volar"
+      },
+      {
+        "imagen": "../img/bartulos/pluma.jpg",
+        "nombre": "Quevedoria",
+        "precio": 89.99,
+        "descripcion": "Pluma mágica, escribe lo que le digas"
+      },
+      {
+        "imagen": "../img/bartulos/talisman.jpg",
+        "nombre": "Talisman",
+        "precio": 45.99,
+        "descripcion": "Espanta espiritus malignos"
+      },
+      {
+        "imagen": "../img/bartulos/llave.jpg",
+        "nombre": "Llave maestra",
+        "precio": 195.99,
+        "descripcion": "Esta llave abrirá cualquier cerradura"
+      },
+      {
+        "imagen": "../img/bartulos/alfombra.jpg",
+        "nombre": "Aladon",
+        "precio": 299.99,
+        "descripcion": "Alfombra mágica voladora"
+      },
+
+      {
+        "imagen": "../img/bartulos/escoba.jpg",
+        "nombre": "Tarso",
+        "precio": 499.99,
+        "descripcion": "Escoba voladora"
+      },
+
+      {
+        "imagen": "../img/bartulos/caja.jpg",
+        "nombre": "Gromp",
+        "precio": 399.99,
+        "descripcion": "Perfecta para encerrar cualquier maldición"
+      },
+      {
+        "imagen": "../img/bartulos/caldero.jpg",
+        "nombre": "Caldero",
+        "precio": 89.99,
+        "descripcion": "Perfecto para hacer pociones"
+      },
+      {
+        "imagen": "../img/bartulos/frasco1.jpg",
+        "nombre": "Frasco O",
+        "precio": 15.99,
+        "descripcion": "Frasco opaco para pociones"
+      },
+      {
+        "imagen": "../img/bartulos/frasco2.jpg",
+        "nombre": "Frasco T",
+        "precio": 19.99,
+        "descripcion": "Frasco translucido para pociones"
+      },
+      {
+        "imagen": "../img/bartulos/frasco4.jpg",
+        "nombre": "Frasco E",
+        "precio": 39.99,
+        "descripcion": "Frasco esmeralda para pociones"
+      }
+    ]
+  }
