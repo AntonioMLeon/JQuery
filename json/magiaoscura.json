@@ -1,0 +1,76 @@
+{
+    "magiaoscura": [
+      {
+        "imagen": "../img/magiaoscura/necronomicon.jpg",
+        "nombre": "Necronomicon",
+        "precio": 799.99,
+        "descripcion": "El libro de los muertos"
+      },
+      {
+        "imagen": "../img/magiaoscura/varitaoscura.jpg",
+        "nombre": "Riddle",
+        "precio": 999.99,
+        "descripcion": "La varita mas poderosa"
+      }, 
+      {
+        "imagen": "../img/magiaoscura/collar.jpg",
+        "nombre": "Malicius",
+        "precio": 399.99,
+        "descripcion": "Collar embrujado de los Nazgul"
+      },
+      {
+        "imagen": "../img/magiaoscura/pocionoscura.jpg",
+        "nombre": "X",
+        "precio": 499.99,
+        "descripcion": "Poción de muerte instantánea"
+      },
+      {
+        "imagen": "../img/magiaoscura/dado.jpg",
+        "nombre": "Faces",
+        "precio": 99.99,
+        "descripcion": "Dado maligno de las 12 caras"
+      },
+      {
+        "imagen": "../img/magiaoscura/bolsa.jpg",
+        "nombre": "Higgs",
+        "precio": 399.99,
+        "descripcion": "Bolsa infinita"
+      },
+      {
+        "imagen": "../img/magiaoscura/muñeco.jpg",
+        "nombre": "Chucky",
+        "precio": 699.99,
+        "descripcion": "Muñeco Voodoo"
+      },
+      {
+        "imagen": "../img/magiaoscura/cofre.jpg",
+        "nombre": "Mimic",
+        "precio": 299.99,
+        "descripcion": "Cofre trampa"
+      },
+      {
+        "imagen": "../img/magiaoscura/cuervo.jpg",
+        "nombre": "Sirius",
+        "precio": 299.99,
+        "descripcion": "Cuervo espía"
+      },
+      {
+        "imagen": "../img/magiaoscura/mascara.jpg",
+        "nombre": "Ghostface",
+        "precio": 499.99,
+        "descripcion": "Máscara maldita"
+      },
+      {
+        "imagen": "../img/magiaoscura/capucha.jpg",
+        "nombre": "Stu",
+        "precio": 299.99,
+        "descripcion": "Capa maldita"
+      },
+      {
+        "imagen": "../img/magiaoscura/daga.jpg",
+        "nombre": "Loomis",
+        "precio": 599.99,
+        "descripcion": "Daga de sangre maldita"
+      }
+    ]
+  }
