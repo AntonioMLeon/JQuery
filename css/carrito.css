@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/fondo3.jpg');
+    background-image: url('../img/tesorofondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Playfair Display SC', serif;
@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 .texto-blanco{
     color: white !important;
@@ -18,11 +19,15 @@ body {
 
 h4{
     color: #B491EE;
+    margin-top: 50px;
+    font-size: 35px;
 }
 
 p{
     margin-bottom: 15px;
     color: white;
+    margin-top: 150px;
+    font-size: 30px;
 }
 
 ul{
@@ -30,7 +35,7 @@ ul{
     list-style: none;
 }
 
-#texto{
+section{
     line-height: 25px;
     background-color: black;
     border-radius: 10px;
@@ -40,7 +45,9 @@ ul{
     margin-left: 300px;
     width: 60%;
     height: 500px;
+    overflow: auto; 
 }
+
 
 footer {
     background-color: #000000;
@@ -52,21 +59,21 @@ footer {
     bottom: 0;
     font-size: 1.2em;
     font-family: 'Playfair Display SC', serif;
-  }
+}
   
-  footer * {
+footer * {
     margin-right: 20px;
     margin-top: 10px;
-  }
+}
 
 @media (max-width: 768px) {
 
     body{
-        background-image: url('../img/fondo3.jpg');
-        background-size: 200%;
+        background-image: url('../img/tesorofondo.jpg');
+        background-size: 280%;
         background-repeat: no-repeat;
     }
-    #texto{
+    section{
         line-height: 25px;
         background-color: black;
         border-radius: 10px;
@@ -82,12 +89,12 @@ footer {
 @media (max-width: 540px) {
 
     body{
-        background-image: url('../img/fondo3.jpg');
-        background-size: 300%;
+        background-image: url('../img/tesorofondo.jpg');
+        background-size: 400%;
         background-repeat: no-repeat;
     }
 
-    #texto{
+    section{
         line-height: 25px;
         background-color: black;
         border-radius: 10px;

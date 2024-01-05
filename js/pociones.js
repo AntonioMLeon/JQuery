@@ -12,9 +12,29 @@ $(document).ready(function () {
             const precio = $('<p>').text('$' + item.precio.toFixed(2));
             const descripcion = $('<p>').text(item.descripcion);
 
-            divProducto.append(imagen, nombre, precio, descripcion);
+            const btnCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
+                type: 'button',
+                value: 'Añadir al carrito',
+                onclick: 'addToCart("' + item.nombre + '", ' + item.precio + ')'
+            });
+
+            divProducto.append(imagen, nombre, precio, descripcion, btnCarrito);
 
             sectionPociones.append(divProducto); 
         });
     });
 });
+
+function addToCart(nombre, precio) {
+    
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    
+    const nuevoProducto = { nombre: nombre, precio: precio };
+    carrito.push(nuevoProducto);
+
+    
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    alert('Añadido al carrito: ' + nombre + ' - $' + precio.toFixed(2));
+}

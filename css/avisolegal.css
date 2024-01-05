@@ -41,7 +41,7 @@ p{
 
     body{
         background-image: url('../img/fondo2.jpg');
-        background-size: 200%;
+        background-size: 250%;
         background-repeat: no-repeat;
     }
     #texto{
@@ -53,7 +53,18 @@ p{
         margin-bottom: 40px;
         margin-left: 50px;
         width: 90%;
-        height: 1000px;
+        height: 1100px;
+    }
+    footer {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        position: sticky;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        font-size: 1.2em;
+        font-family: 'Playfair Display SC', serif;
     }
 
 }

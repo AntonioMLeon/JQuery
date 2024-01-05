@@ -20,7 +20,7 @@ nav {
   background-color: black;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 20px;
+  padding: 5px 20px;
 }
 
 .logoheader img {
@@ -31,8 +31,8 @@ nav {
 #carrito{
   height: 70px;
   width: 70px;
-  margin-right: 10px;
-  margin-left: -60px;
+  margin-right: 5px;
+  margin-left: -50px;
   margin-bottom: 5px;
 }
 
@@ -42,14 +42,14 @@ nav {
 }
 
 .menu {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 1.8em;
   list-style: none;
   display: flex;
 }
 
 .menu li {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .menu a {
@@ -240,6 +240,18 @@ footer .elemento:nth-child(7)::before {
   footer .elemento:nth-child(5)::before {
     content: ""; 
   }
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    font-size: 1.2em;
+    font-family: 'Playfair Display SC', serif;
+  }
  
 }
 
@@ -257,5 +269,17 @@ footer .elemento:nth-child(7)::before {
   }
   .vertical-bar{
     display: none;
+  }
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    font-size: 1.2em;
+    font-family: 'Playfair Display SC', serif;
   }
 }
