@@ -2,7 +2,7 @@ $(document).ready(function () {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const sectionCarrito = $('#carrito-productos');
 
-    // Limpia el contenido actual de la sección
+    
     sectionCarrito.empty();
 
     
