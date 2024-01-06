@@ -95,6 +95,13 @@ $(document).ready(function () {
                             type: 'text',
                             id: 'direccion',
                             placeholder: 'Direccion'
+                        }),
+                        $('<br><br>'),
+                        $('<label>').attr('for', 'tarjeta').text('Número de Tarjeta:'),
+                        $('<input>').attr({
+                            type: 'text',
+                            id: 'tarjeta',
+                            placeholder: 'Número de tarjeta'
                         })
                     ),
                     $('<div>').addClass('modal-footer bg-dark').append(

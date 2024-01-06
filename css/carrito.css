@@ -10,7 +10,14 @@ body {
 
 .producto-en-carrito {
     margin-bottom: 10px;  
-    padding: 10px;        
+    padding: 10px;
+    background-color: #433952;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;        
+}
+
+.producto-en-carrito:hover {
+    background-color: #B491EE;
 }
 
 .producto-en-carrito p {
@@ -23,6 +30,7 @@ body {
 .carrito-total{
     margin-top: 5px; 
 }
+
 .texto-blanco{
     color: white !important;
 }
@@ -51,7 +59,7 @@ ul{
 
 section{
     line-height: 25px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     border: 1px solid #B491EE;
     margin-top: 70px;
@@ -89,7 +97,7 @@ footer * {
     }
     section{
         line-height: 25px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.8);
         border-radius: 10px;
         border: 1px solid #B491EE;
         margin-top: 160px;
@@ -110,7 +118,7 @@ footer * {
 
     section{
         line-height: 25px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.8);
         border-radius: 10px;
         border: 1px solid #B491EE;
         margin-top: 50px;
