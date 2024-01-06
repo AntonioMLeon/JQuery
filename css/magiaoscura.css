@@ -159,7 +159,12 @@ section .producto p {
     body{
         background-image: url('../img/fondoprincipal.jpg');
         background-size: 260%;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; 
     }
     footer {
         background-color: #000000;
@@ -180,8 +185,19 @@ section .producto p {
 
     body{
         background-image: url('../img/fondoprincipal.jpg');
-        background-size: 1000%;
-        background-repeat: no-repeat;
+        background-size: 300%;
+        background-repeat: repeat;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; 
+    }
+    section .producto img {
+        max-width: 90%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
     }
 
 }

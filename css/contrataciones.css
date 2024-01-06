@@ -91,6 +91,17 @@ section .producto p {
         width: 450px;
         height: 364px;
     }
+    footer {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        position: sticky;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        font-size: 1.2em;
+        font-family: 'Playfair Display SC', serif;
+    }
 }
 
 @media (max-width: 540px) {
