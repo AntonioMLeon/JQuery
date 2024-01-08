@@ -150,7 +150,7 @@ function quitarProducto(index) {
     location.reload();
 }
 ```
-Luego llamamos a la función anterior a este botón para eliminar el producto.
+Luego llamamos a la función anterior en este botón para eliminar el producto.
 
 ```
 const botonEliminar = $('<button>').text('Eliminar').click(function () {
