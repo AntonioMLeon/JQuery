@@ -12,13 +12,13 @@ $(document).ready(function () {
             const precio = $('<p>').text('$' + objetoMagico.precio.toFixed(2));
             const descripcion = $('<p>').text(objetoMagico.descripcion);
 
-            const btnCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
+            const botonCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
                 type: 'button',
                 value: 'Añadir al carrito',
                 onclick: 'addToCart("' + objetoMagico.nombre + '", ' + objetoMagico.precio + ')'
             });
 
-            divProducto.append(imagen, nombre, precio, descripcion, btnCarrito);
+            divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
 
             sectionObjetosMagicos.append(divProducto);  
         });

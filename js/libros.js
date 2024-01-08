@@ -12,13 +12,13 @@ $(document).ready(function () {
             const precio = $('<p>').text('$' + libro.precio.toFixed(2));
             const descripcion = $('<p>').text(libro.descripcion);
 
-            const btnCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
+            const botonCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
                 type: 'button',
                 value: 'Añadir al carrito',
                 onclick: 'addToCart("' + libro.nombre + '", ' + libro.precio + ')'
             });
 
-            divProducto.append(imagen, nombre, precio, descripcion, btnCarrito);
+            divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
 
             sectionLibros.append(divProducto);  
         });
