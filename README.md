@@ -16,6 +16,7 @@ https://www.figma.com/file/ZI4BhrLQrmRAw4pUO1Decl/Untitled?type=design&node-id=0
 # Funcionalida de la web:
 
 **Carousel**
+
 Con este codigo lo que hacemos es inicializar el carousel, controlar el tiempo que tarda en pasar a la siguiente imagen y la posibilidad de pulsar click para ir ala siguiente imagen o a la anterior.
 
 ```
