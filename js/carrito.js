@@ -16,7 +16,7 @@ $(document).ready(function () {
             const precio = $('<p>').text('$' + producto.precio.toFixed(2));
 
             const botonEliminar = $('<button>').text('Eliminar').click(function () {
-                removeProduct(index);
+                quitarProducto(index);
             });
 
             divProducto.append(nombre, precio, botonEliminar);
@@ -125,7 +125,7 @@ $(document).ready(function () {
     }
 });
 
-function removeProduct(index) {
+function quitarProducto(index) {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.splice(index, 1);
     localStorage.setItem('carrito', JSON.stringify(carrito));

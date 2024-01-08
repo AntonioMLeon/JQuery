@@ -15,7 +15,7 @@ $(document).ready(function () {
             const botonCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
                 type: 'button',
                 value: 'Añadir al carrito',
-                onclick: 'addToCart("' + objetoMagico.nombre + '", ' + objetoMagico.precio + ')'
+                onclick: 'addCarrito("' + objetoMagico.nombre + '", ' + objetoMagico.precio + ')'
             });
 
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 });
 
-function addToCart(nombre, precio) {
+function addCarrito(nombre, precio) {
     
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 

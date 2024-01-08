@@ -15,7 +15,7 @@ $(document).ready(function () {
             const botonCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
                 type: 'button',
                 value: 'Añadir al carrito',
-                onclick: 'addToCart("' + item.nombre + '", ' + item.precio + ')'
+                onclick: 'addCarrito("' + item.nombre + '", ' + item.precio + ')'
             });
 
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
@@ -49,7 +49,7 @@ $(document).ready(function () {
     $('body').append(modalContent);
 });
 
-function addToCart(nombre, precio) {
+function addCarrito(nombre, precio) {
     
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
