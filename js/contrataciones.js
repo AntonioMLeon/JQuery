@@ -13,7 +13,7 @@ $(document).ready(function () {
           const descripcion = $('<p>').text(contratacion.descripcion);
 
           
-          const btnReservar = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
+          const botonReservar = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
               type: 'button',
               value: 'Contratar',
               'data-bs-toggle': 'modal',
@@ -93,7 +93,7 @@ $(document).ready(function () {
           );
 
           
-          divProducto.append(imagen, nombre, precio, descripcion, btnReservar, modal);
+          divProducto.append(imagen, nombre, precio, descripcion, botonReservar, modal);
 
           
           sectionContrataciones.append(divProducto);

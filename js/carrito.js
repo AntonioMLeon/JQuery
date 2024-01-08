@@ -15,11 +15,11 @@ $(document).ready(function () {
             const nombre = $('<p>').text(producto.nombre);
             const precio = $('<p>').text('$' + producto.precio.toFixed(2));
 
-            const btnEliminar = $('<button>').text('Eliminar').click(function () {
+            const botonEliminar = $('<button>').text('Eliminar').click(function () {
                 removeProduct(index);
             });
 
-            divProducto.append(nombre, precio, btnEliminar);
+            divProducto.append(nombre, precio, botonEliminar);
             sectionCarrito.append(divProducto);
 
             total += producto.precio;
@@ -28,7 +28,7 @@ $(document).ready(function () {
         sectionCarrito.append('<h4 class="titulo-carrito">Precio total de su compra</h4>');
         sectionCarrito.append('<p class="carrito-total">Total: $' + total.toFixed(2) + '</p>');
 
-        const btnReservar = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
+        const botonReservar = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
             type: 'button',
             value: 'Pagar ahora',
             'data-bs-toggle': 'modal',
@@ -120,7 +120,7 @@ $(document).ready(function () {
             )
         );
 
-        sectionCarrito.append(btnReservar);
+        sectionCarrito.append(botonReservar);
         sectionCarrito.append(modal);
     }
 });
