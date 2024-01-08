@@ -63,7 +63,7 @@ $(document).ready(function () {
             const botonCarrito = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
                 type: 'button',
                 value: 'Añadir al carrito',
-                onclick: 'addToCart("' + item.nombre + '", ' + item.precio + ')'
+                onclick: 'addCarrito("' + item.nombre + '", ' + item.precio + ')'
             });
 
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
@@ -75,5 +75,86 @@ $(document).ready(function () {
 
 ```
 
-**JSON:**
+**AddCarrito:**
+
+Con este codigo tenemos una función con la que agregamos los productos al carrito.
+Todas las pestañas con productos tienen este codigo.
+
+```
+
+function addCarrito(nombre, precio) {
+    
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    
+    const nuevoProducto = { nombre: nombre, precio: precio };
+    carrito.push(nuevoProducto);
+
+    
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    alert('Añadido al carrito: ' + nombre + ' - $' + precio.toFixed(2));
+}
+
+
+```
+
+**Carrito:**
+
+Con este codigo mostramos todos los productos que se han añadido en el carrito y en el caso de que no haya nada añadido va a salir un mensaje que diga que no hay ningún producto en el carrito.
+
+```
+
+$(document).ready(function () {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const sectionCarrito = $('#carrito-productos');
+
+    sectionCarrito.empty();
+    sectionCarrito.append('<h4>Carrito de Compras</h4>');
+
+    if (carrito.length === 0) {
+        sectionCarrito.append('<p>¡Tu carrito está vacío! Agrega algunos productos.</p>');
+    } else {
+        let total = 0;
+
+        $.each(carrito, function (index, producto) {
+            const divProducto = $('<div>').addClass('producto-en-carrito');
+            const nombre = $('<p>').text(producto.nombre);
+            const precio = $('<p>').text('$' + producto.precio.toFixed(2));
+
+            const botonEliminar = $('<button>').text('Eliminar').click(function () {
+                quitarProducto(index);
+            });
+
+            divProducto.append(nombre, precio, botonEliminar);
+            sectionCarrito.append(divProducto);
+
+            total += producto.precio;
+        });
+```
+
+Este codigo nos muestra la suma total del precio de todos los productos añadidos.
+
+```
+sectionCarrito.append('<h4 class="titulo-carrito">Precio total de su compra</h4>');
+sectionCarrito.append('<p class="carrito-total">Total: $' + total.toFixed(2) + '</p>');
+```
+
+Con esta función podemos eliminar productos que hayamos añadido al carrito.
+
+```
+function quitarProducto(index) {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.splice(index, 1);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    location.reload();
+}
+```
+Luego llamamos a la función anterior a este botón para eliminar el producto.
+
+```
+const botonEliminar = $('<button>').text('Eliminar').click(function () {
+ quitarProducto(index);
+```
+     
 
