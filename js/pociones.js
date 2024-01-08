@@ -6,6 +6,7 @@ $(document).ready(function () {
         const pociones = data.pociones; 
 
         $.each(pociones, function (index, item) {
+
             const divProducto = $('<div>').addClass('producto');
             const imagen = $('<img>').attr('src', item.imagen).attr('alt', item.nombre).addClass('img-producto img-' + index);
             const nombre = $('<h3>').text(item.nombre);
@@ -16,6 +17,7 @@ $(document).ready(function () {
                 type: 'button',
                 value: 'Añadir al carrito',
                 onclick: 'addCarrito("' + item.nombre + '", ' + item.precio + ')'
+                
             });
 
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);

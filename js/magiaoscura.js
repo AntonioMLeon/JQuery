@@ -6,6 +6,7 @@ $(document).ready(function () {
         const magiaoscura = data.magiaoscura; 
 
         $.each(magiaoscura, function (index, item) {
+
             const divProducto = $('<div>').addClass('producto');
             const imagen = $('<img>').attr('src', item.imagen).attr('alt', item.nombre).addClass('img-producto img-' + index);
             const nombre = $('<h3>').text(item.nombre);
@@ -21,6 +22,7 @@ $(document).ready(function () {
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
 
             sectionMagiaOscura.append(divProducto); 
+            
         });
 
         if (window.location.href.toLowerCase().includes('magiaoscura')) {

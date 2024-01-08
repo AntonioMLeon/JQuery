@@ -15,8 +15,10 @@ $(document).ready(function () {
             const nombre = $('<p>').text(producto.nombre);
             const precio = $('<p>').text('$' + producto.precio.toFixed(2));
 
-            const botonEliminar = $('<button>').text('Eliminar').click(function () {
+            const botonEliminar= $('<button>').text('Eliminar').click(function () {
+
                 quitarProducto(index);
+
             });
 
             divProducto.append(nombre, precio, botonEliminar);
@@ -26,16 +28,17 @@ $(document).ready(function () {
         });
 
         sectionCarrito.append('<h4 class="titulo-carrito">Precio total de su compra</h4>');
+
         sectionCarrito.append('<p class="carrito-total">Total: $' + total.toFixed(2) + '</p>');
 
-        const botonReservar = $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
+        const botonReservar= $('<input>').addClass('btn btn-outline-light fw-bold w-80 h-40 fs-4 mb-4').attr({
             type: 'button',
             value: 'Pagar ahora',
             'data-bs-toggle': 'modal',
             'data-bs-target': '#exampleModal'
         });
 
-        const modal = $('<div>').addClass('modal fade').attr({
+        const modal= $('<div>').addClass('modal fade').attr({
             id: 'exampleModal',
             tabindex: '-1',
             'aria-labelledby': 'exampleModalLabel',
@@ -76,14 +79,14 @@ $(document).ready(function () {
                             placeholder: 'Email'
                         }),
                         $('<br><br>'),
-                        $('<label>').attr('for', 'telefono').text('Telefono:'),
+                        $('<label>').attr('for', 'telefono').text('Teléfono:'),
                         $('<input>').attr({
                             type: 'text',
                             id: 'telefono',
                             placeholder: 'Telefono'
                         }),
                         $('<br><br>'),
-                        $('<label>').attr('for', 'codigopostal').text('Codigo postal:'),
+                        $('<label>').attr('for', 'codigopostal').text('Código postal:'),
                         $('<input>').attr({
                             type: 'text',
                             id: 'codigopostal',
@@ -125,10 +128,15 @@ $(document).ready(function () {
     }
 });
 
+
 function quitarProducto(index) {
+
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
     carrito.splice(index, 1);
+
     localStorage.setItem('carrito', JSON.stringify(carrito));
+
     location.reload();
 }
 

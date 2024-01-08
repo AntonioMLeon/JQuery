@@ -6,6 +6,7 @@ $(document).ready(function () {
         const objetosMagicos = data.objetosmagicos;  
 
         $.each(objetosMagicos, function (index, objetoMagico) {  
+
             const divProducto = $('<div>').addClass('producto');
             const imagen = $('<img>').attr('src', objetoMagico.imagen).attr('alt', objetoMagico.nombre).addClass('img-producto img-' + index);
             const nombre = $('<h3>').text(objetoMagico.nombre);
@@ -16,6 +17,7 @@ $(document).ready(function () {
                 type: 'button',
                 value: 'Añadir al carrito',
                 onclick: 'addCarrito("' + objetoMagico.nombre + '", ' + objetoMagico.precio + ')'
+                
             });
 
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);

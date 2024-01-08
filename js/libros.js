@@ -6,6 +6,7 @@ $(document).ready(function () {
         const libros = data.libros;  
 
         $.each(libros, function (index, libro) {  
+
             const divProducto = $('<div>').addClass('producto');
             const imagen = $('<img>').attr('src', libro.imagen).attr('alt', libro.nombre).addClass('img-producto img-' + index);
             const nombre = $('<h3>').text(libro.nombre);
@@ -21,6 +22,7 @@ $(document).ready(function () {
             divProducto.append(imagen, nombre, precio, descripcion, botonCarrito);
 
             sectionLibros.append(divProducto);  
+            
         });
     });
 });

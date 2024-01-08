@@ -7,11 +7,15 @@ $(document).ready(function () {
 
     
     $('.carousel-siguiente').on('click', function () {
+
       carousel.next();
+
     });
 
     
     $('.carousel-anterior').on('click', function () {
+
       carousel.prev();
+      
     });
   });
